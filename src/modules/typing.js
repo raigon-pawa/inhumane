@@ -14,7 +14,7 @@ const puppeteer = require('puppeteer');
         el.map(({ innerText }) => innerText)
       );
 
-    await page.keyboard.sendCharacter(typingText.join(''));
+    await page.keyboard.type(typingText.join(''));
 
     console.log('Text input complete.');
   } catch (error) {
